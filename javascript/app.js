@@ -2,12 +2,10 @@
 var timerLive = true;
 
 var timerVar = setInterval(countTimer, 1000);
-var totalSeconds = 133;
+var totalSeconds = 120;
 function countTimer() {
 --totalSeconds;
-var hour = Math.floor(totalSeconds /3600);
-var minute = Math.floor((totalSeconds - hour*3600)/60);
-var seconds = totalSeconds - (hour*3600 + minute*60);
+
 
 if (timerLive){
 
@@ -15,7 +13,7 @@ if (timerLive){
 		window.location.href = "outOfTime.html";
 	}
 
-	document.getElementById("timer").innerHTML = minute + ":" + seconds;
+	document.getElementById("timer").innerHTML = totalSeconds;
 	}
 
 }
