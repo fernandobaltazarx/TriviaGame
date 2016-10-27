@@ -1,0 +1,124 @@
+<!DOCTYPE>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+</head>
+<body>
+	<div id= 'container'>
+		<div id="header">
+<h2>Time left: <div id="timer"></div></h2>
+<!-- <div id ="stop_timer" onclick="clearInterval(timerVar)">Stop time</div> -->
+<!-- 			<h2>You Have <span id="lives">120</span> seconds left.<br/> -->
+			<h1 id="WORD">____</h1>
+		</div>
+   <form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
+		<div id="letters"></div>
+			<h2>When did Parks and Rec premiere?</h2> 
+			<center>
+			 <table>
+			  <tr>
+				<td>
+				<p>2015  &nbsp;&nbsp;</p>
+                   <input type="radio" name="q1" value="q1-a">A
+			    </td>
+				<td>
+				<p>2009  &nbsp;&nbsp;</p>
+                   <input type="radio" name="q1" value="q1-b">B
+			    </td>
+				<td>
+				<p>1999  &nbsp;&nbsp;</p>
+                   <input type="radio" name="q1" value="q1-c">C
+			    </td>
+				<td>
+				<p>2000  &nbsp;&nbsp;</p>
+                   <input type="radio" name="q1" value="q1-d">D
+			    </td>
+			  </tr>
+			  </table>
+			  </center>
+			<h2>Who's the guy with the mustache in the show?</h2> 
+			<center>
+			 <table>
+			  <tr>
+				<td>
+				<p>Tom Selleck  &nbsp;&nbsp;</p>
+                   <input type="radio" name="q2" value="q2-a">A
+			    </td>
+				<td>
+				<p>Burt Reynolds  &nbsp;&nbsp;</p>
+                   <input type="radio" name="q2" value="q2-b">B
+			    </td>
+				<td>
+				<p>Ron Swanson  &nbsp;&nbsp;</p>
+                   <input type="radio" name="q2" value="q2-c">C
+			    </td>
+				<td>
+				<p>Ron Jeremy  &nbsp;&nbsp;</p>
+                   <input type="radio" name="q2" value="q2-d">D
+			    </td>
+			  </tr>
+			  </table>
+			  </center>
+			<h2>How do you spell Amy Poehler's character name?</h2> 
+			<center>
+			 <table>
+			  <tr>
+				<td>
+				<p>Leslie Nope  &nbsp;&nbsp;</p>
+                   <input type="radio" name="q3" value="q3-a">A
+			    </td>
+				<td>
+				<p>Leslie Knope  &nbsp;&nbsp;</p>
+                   <input type="radio" name="q3" value="q3-b">B
+			    </td>
+				<td>
+				<p>Lezzy Knope  &nbsp;&nbsp;</p>
+                   <input type="radio" name="q3" value="q3-c">C
+			    </td>
+				<td>
+				<p>Leslie Nohp  &nbsp;&nbsp;</p>
+                   <input type="radio" name="q3" value="q3-d">D
+			    </td>
+			  </tr>
+			  </table>
+			  </center>
+			<h2>"______ treat yo self!"?</h2> 
+			<center>
+			 <table>
+			  <tr>
+				<td>
+				<p>Screw  &nbsp;&nbsp;</p>
+                   <input type="radio" name="q4" value="q4-a">A
+			    </td>
+				<td>
+				<p>Find  &nbsp;&nbsp;</p>
+                   <input type="radio" name="q4" value="q4-b">B
+			    </td>
+				<td>
+				<p>Enjoy  &nbsp;&nbsp;</p>
+                   <input type="radio" name="q4" value="q4-c">C
+			    </td>
+				<td>
+				<p>Treat  &nbsp;&nbsp;</p>
+                   <input type="radio" name="q4" value="q4-d">D
+			    </td>
+			  </tr>
+			  </table>
+			  </center>
+		<h1 id="WORD">____</h1>	
+
+			<button class="submit" onclick="return handleClick();" type="submit">Submit</button><br><br>
+
+	</form>
+			<h1 id="RESULTS"></h1>	<br> <br>
+			<a href="questions.html"><h2>RESTART</h2> </a>
+		</div>
+	</div>
+	<br />
+	<!-- <center><img id="main_img" src="images/0.jpg"></center> -->
+<script type="text/javascript" src="javascript/app.js"></script>
+</body>
+</html>
